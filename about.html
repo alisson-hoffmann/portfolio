@@ -3,34 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre — Alisson Hoffmann</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="cabecalho">
        <nav class="cabecalho_menu">
-            <a class="cabecalho_link" href="index.html">HOME</a>
-            <a class="cabecalho_link" href="about.html">Sobre Mim</a>
+            <a class="cabecalho_brand" href="index.html">Alisson Hoffmann</a>
+            <div class="cabecalho_links">
+                <a class="cabecalho_link" href="index.html">Início</a>
+                <a class="cabecalho_link" href="about.html">Sobre</a>
+            </div>
        </nav>
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao_conteudo">
+
+    <main class="apresentacao container">
+        <section class="apresentacao_conteudo bento">
             <h1 class="apresentacao_titulo">Sobre mim</h1>
-            <p class="apresentacao_texto">Moro em Rio do sul, no momento estou cursando Sistemas de Informação na Unidavi
-                em busca de novas opoturnidades e experiência  na aréa de desenvolvedor/progamador.
-            </p>
-            <p class="apresentacao_texto">Faço curso na plataforma da alura.</p>
-            <h1 class="apresentacao_titulo">Minhas habilidades até o momento</h1>
-            <ul>
-                <li>
-                    <p class="apresentacao_texto">Html e css Avançado.</p>
-                </li>
+            <p class="apresentacao_texto">Moro em Rio do Sul. Atualmente curso Sistemas de Informação na Unidavi e estou em busca de oportunidades e experiência na área de desenvolvimento front-end.</p>
+
+            <h2 class="apresentacao_subtitulo">Educação & Formação</h2>
+            <p class="apresentacao_texto">Cursando Sistemas de Informação — Unidavi. Cursos em UX/UI e Front-end (Alura).</p>
+
+            <h2 class="apresentacao_subtitulo">Minhas habilidades</h2>
+            <ul class="skills_list">
+                <li>HTML5 &amp; CSS3 — layouts responsivos</li>
+                <li>JavaScript (ES6+) — DOM e interação</li>
+                <li>Design UI/UX — prototipagem e acessibilidade</li>
             </ul>
         </section>
-         <img class="apresentacao_imagem" src="./assents/codigo.webp" alt="programando">
+
+        <aside class="apresentacao_imagem__wrap bento-aside">
+            <img class="apresentacao_imagem" src="./assents/codigo.webp" alt="programando">
+        </aside>
     </main>
+
     <footer class="rodape">
         <p>Desenvolvido por Alisson.</p>
-    </footer>   
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
 </body>
 </html>

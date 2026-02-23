@@ -1,38 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio — Alisson Hoffmann</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="bg-anim" aria-hidden="true"></div>
     <header class="cabecalho">
        <nav class="cabecalho_menu">
-            <a class="cabecalho_link" href="index.html">Página Principal</a>
-            <a class="cabecalho_link" href="about.html">Sobre Mim</a>
+            <a class="cabecalho_brand" href="index.html">Alisson Hoffmann</a>
+            <div class="cabecalho_links">
+                <a class="cabecalho_link" href="index.html">Início</a>
+                <a class="cabecalho_link" href="about.html">Sobre</a>
+            </div>
        </nav>
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao_conteudo">
-            <h1 class="apresentacao_titulo">Eleve seu negócio digital
-            <strong class="titulo-destaque">a outro nível</strong></h1>
-            <p class="apresentacao_texto">Olá! Sou Alisson Hoffmann Isaias.</p>
+
+    <main class="hero" role="main">
+        <section class="hero_content apresentacao_conteudo">
+            <h1 class="apresentacao_titulo">Eleve seu negócio digital <span class="titulo-destaque">a outro nível</span></h1>
+            <p class="apresentacao_texto">Olá — sou <strong>Alisson Hoffmann</strong>, desenvolvedor front-end focado em experiências elegantes e performant.</p>
+
             <div class="apresentacao_botao">
-                <h2 class="apresentacao_subtitulo">Acesse minhas redes:</h2>
-                <a class="apresentacao__botao" href="https://www.instagram.com/alisson__hoffmann/" target="_blank">
-                    <img src="./assents/instagram.png">Instagram</a>
-                <a class="apresentacao__botao" href="https://github.com/alisson-hoffmann" target="_blank">
-                    <img src="./assents/github.png">GitHub</a>
-                <a class="apresentacao__botao" href="https://www.linkedin.com/in/alisson-hoffmann/" target="_blank">
-                    <img src="./assents/linkedin.png">Linkedin
-                </a>
+                <h2 class="apresentacao_subtitulo">Acesse minhas redes</h2>
+                <div class="cta_group">
+                    <a class="apresentacao__botao" href="https://www.instagram.com/alisson__hoffmann/" target="_blank" rel="noopener">
+                        <img src="./assents/instagram.png" alt="instagram">Instagram
+                    </a>
+                    <a class="apresentacao__botao" href="https://github.com/alisson-hoffmann" target="_blank" rel="noopener">
+                        <img src="./assents/github.png" alt="github">GitHub
+                    </a>
+                    <a class="apresentacao__botao" href="https://www.linkedin.com/in/alisson-hoffmann/" target="_blank" rel="noopener">
+                        <img src="./assents/linkedin.png" alt="linkedin">LinkedIn
+                    </a>
+                </div>
             </div>
         </section>
-        <img class="apresentacao_imagem" src="./assents/alisson.png" alt="programando">
+
+        <figure class="apresentacao_imagem__wrap">
+            <img class="apresentacao_imagem" src="./assents/alisson.png" alt="Alisson Hoffmann programando">
+        </figure>
     </main>
+
     <footer class="rodape">
-        <p>Desenvolvido por Alisson e Atulizado por Mireski.</p>
+        <p>Desenvolvido por Alisson. Atualizado por Mireski.</p>
     </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
 </body>
 </html>
